@@ -42,19 +42,19 @@ public class Car { // Julkinen luokka Car // Clase pública Car
             speed = 0; // Aseta nopeus nollaan // Establecer velocidad a cero
     }
 
-    double getSpeed() { // Julkinen menetelmä nopeuden saamiseksi // Método público para obtener la velocidad
+    double getSpeed() { // Julkinen menetelmä nopeuden saamiseksi // Métod público para obtener la velocidad
         return speed; // Palauta nopeus // Devolver velocidad
     }
 
-    String getTypeName() { // Julkinen menetelmä tyyppinimen saamiseksi // Método público para obtener el nombre de tipo
+    String getTypeName() { // Julkinen menetelmä tyyppinimen saamiseksi // Méto público para obtener el nombre de tipo
         return typeName; // Palauta tyyppinimi // Devolver nombre de tipo
     }
 
-    void fillTank() { // Julkinen menetelmä tankin täyttämiseksi // Método público para llenar el tanque
+    void fillTank() { // Julkinen menetelmä tankin täyttämiseksi // Méto público para llenar el tanque
         gasolineLevel = tankCapacity; // Aseta bensiinimäärä tankin kapasiteettiin // Establecer nivel de gasolina a la capacidad del tanque
     }
 
-    double getGasolineLevel() { // Julkinen menetelmä bensiinimäärän saamiseksi // Método público para obtener el nivel de gasolina
+    double getGasolineLevel() { // Julkinen menetelmä bensiinimäärän saamiseksi // Méto público para obtener el nivel de gasolina
         return gasolineLevel; // Palauta bensiinimäärä // Devolver nivel de gasolina
     }
 }
