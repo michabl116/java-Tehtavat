@@ -1,7 +1,7 @@
 package Task_2; // Paketti Task_2 // Paquete Task_2
 
 public class CarDriver { // Julkinen luokka CarDriver // Clase pública CarDriver
-    public static void main(String[] args) { // Julkinen staattinen päämenetelmä // Método principal estático público
+    public static void main(String[] args) { // Julkinen staattinen päämenetelmä // Méto principal estático público
         Car myCar = new Car("Toyota Corolla", 50, 20); // Luo uusi auto // Crear un nuevo coche
         myCar.fillTank(); // Täytä tankki // Llenar el tanque
 

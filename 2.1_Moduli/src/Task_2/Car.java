@@ -27,14 +27,14 @@ public class Car { // Julkinen luokka Car // Clase pública Car
         this.gasolineLevel = tankCapacity; // Oletetaan, että tankki on täynnä alussa // Asumimos que el tanque está lleno al inicio
     }
 
-    public void accelerate() { // Julkinen kiihdytysmenetelmä // Método público para acelerar
+    public void accelerate() { // Julkinen kiihdytysmenetelmä // Méto público para acelerar
         if (gasolineLevel > 0) // Jos bensiinimäärä on suurempi kuin 0 // Si el nivel de gasolina es mayor que 0
             speed += 10; // Lisää nopeutta 10 km/h // Aumentar velocidad en 10 km/h
         else // Muuten // De lo contrario
             speed = 0; // Aseta nopeus nollaan // Establecer velocidad a cero
     }
 
-    void decelerate(int amount) { // Yksityinen hidastusmenetelmä // Método privado para desacelerar
+    void decelerate(int amount) { // Yksityinen hidastusmenetelmä // Méto privado para desacelerar
         if (gasolineLevel > 0) { // Jos bensiinimäärä on suurempi kuin 0 // Si el nivel de gasolina es mayor que 0
             if (amount > 0) // Jos määrä on suurempi kuin 0 // Si la cantidad es mayor que 0
                 speed = Math.max(0, speed - amount); // Vähennä nopeutta // Reducir velocidad
@@ -42,19 +42,19 @@ public class Car { // Julkinen luokka Car // Clase pública Car
             speed = 0; // Aseta nopeus nollaan // Establecer velocidad a cero
     }
 
-    double getSpeed() { // Julkinen menetelmä nopeuden saamiseksi // Método público para obtener la velocidad
+    double getSpeed() { // Julkinen menetelmä nopeuden saamiseksi // Métod público para obtener la velocidad
         return speed; // Palauta nopeus // Devolver velocidad
     }
 
-    String getTypeName() { // Julkinen menetelmä tyyppinimen saamiseksi // Método público para obtener el nombre de tipo
+    String getTypeName() { // Julkinen menetelmä tyyppinimen saamiseksi // Méto público para obtener el nombre de tipo
         return typeName; // Palauta tyyppinimi // Devolver nombre de tipo
     }
 
-    void fillTank() { // Julkinen menetelmä tankin täyttämiseksi // Método público para llenar el tanque
+    void fillTank() { // Julkinen menetelmä tankin täyttämiseksi // Méto público para llenar el tanque
         gasolineLevel = tankCapacity; // Aseta bensiinimäärä tankin kapasiteettiin // Establecer nivel de gasolina a la capacidad del tanque
     }
 
-    double getGasolineLevel() { // Julkinen menetelmä bensiinimäärän saamiseksi // Método público para obtener el nivel de gasolina
+    double getGasolineLevel() { // Julkinen menetelmä bensiinimäärän saamiseksi // Méto público para obtener el nivel de gasolina
         return gasolineLevel; // Palauta bensiinimäärä // Devolver nivel de gasolina
     }
 }
