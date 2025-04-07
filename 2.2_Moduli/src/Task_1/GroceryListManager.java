@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class GroceryListManager {
     private ArrayList<String> groceryList = new ArrayList<>();
 
-    // Metodi lisäämään kohteen ostoslistaan
+    // Méto para agregar un artículo a la lista de compras / Metodi lisäämään kohteen ostoslistaan
     public void addItem(String item) {
         if (!groceryList.contains(item)) {
             groceryList.add(item);
@@ -15,7 +15,7 @@ public class GroceryListManager {
         }
     }
 
-    // Metodi poistamaan kohteen ostoslistasta
+    // Méto para eliminar un artículo de la lista de compras / Metodi poistamaan kohteen ostoslistasta
     public void removeItem(String item) {
         if (groceryList.contains(item)) {
             groceryList.remove(item);
@@ -25,7 +25,7 @@ public class GroceryListManager {
         }
     }
 
-    // Metodi näyttämään kaikki kohteet ostoslistassa
+    // Méto para mostrar todos los artículos en la lista de compras / Metodi näyttämään kaikki kohteet ostoslistassa
     public void displayList() {
         System.out.println("Grocery List:");
         for (int i = 0; i < groceryList.size(); i++) {
@@ -33,31 +33,31 @@ public class GroceryListManager {
         }
     }
 
-    // Metodi tarkistamaan, onko kohde ostoslistassa
+    // Méto para verificar si un artículo está en la lista de compras / Metodi tarkistamaan, onko kohde ostoslistassa
     public boolean checkItem(String item) {
         return groceryList.contains(item);
     }
 
-    // Päämetodi toiminnallisuuden esittelemiseksi
+    // Méto principal para demostrar la funcionalidad / Päämetodi toiminnallisuuden esittelemiseksi
     public static void main(String[] args) {
         GroceryListManager manager = new GroceryListManager();
 
-        // Lisää kohteita ostoslistaan
+        // Agregar artículos a la lista de compras / Lisää kohteita ostoslistaan
         manager.addItem("Apples");
         manager.addItem("Milk");
         manager.addItem("Bread");
 
-        // Näytä ostoslista
+        // Mostrar la lista de compras / Näytä ostoslista
         manager.displayList();
 
-        // Tarkista, onko tietty kohde ostoslistassa
+        // Verificar si un artículo específico está en la lista de compras / Tarkista, onko tietty kohde ostoslistassa
         System.out.println("Is 'Milk' in the grocery list? " + manager.checkItem("Milk"));
 
-        // Poista kohde ostoslistasta
+        // Eliminar un artículo de la lista de compras / Poista kohde ostoslistasta
         System.out.println("Removing 'Milk' from the list...");
         manager.removeItem("Milk");
 
-        // Näytä päivitetty ostoslista
+        // Mostrar la lista de compras actualizada / Näytä päivitetty ostoslista
         manager.displayList();
     }
 }
