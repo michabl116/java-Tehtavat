@@ -14,7 +14,7 @@ public class SportsCar extends Car {
         // Verificamos si hay gasolina disponible.
         if (getGasolineLevel() > 0) {
             // Kutsutaan kahdesti Car-luokan accelerate-metodia, jotta auto kiihtyy nopeammin.
-            // Llamamos dos veces al método accelerate() de Car para que el auto acelere más rápido.
+            // Llamamos dos veces al méto accelerate() de Car para que el auto acelere más rápido.
             super.accelerate();
             super.accelerate();
         }
@@ -23,7 +23,7 @@ public class SportsCar extends Car {
     @Override
     public void decelerate(int amount) {
         // Kutsutaan Car-luokan decelerate-metodia, mutta hidastetaan kaksi kertaa enemmän.
-        // Llamamos al método decelerate() de Car, pero desaceleramos el doble.
+        // Llamamos al méto decelerate() de Car, pero desaceleramos el doble.
         super.decelerate(amount * 2);
     }
 }
