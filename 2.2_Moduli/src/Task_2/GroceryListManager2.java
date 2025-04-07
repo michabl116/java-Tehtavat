@@ -74,7 +74,7 @@ public class GroceryListManager2 {
 
         // Laske ostoslistan kokonaiskustannukset
         // Calcular el costo total de la lista de compras
-        System.out.println("Total cost: €" + manager.calculateTotalCost());
+        System.out.println("Total cost: $" + manager.calculateTotalCost());
 
         // Poista kohde ostoslistasta
         // Eliminar un artículo de la lista de compras
