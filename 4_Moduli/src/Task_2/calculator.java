@@ -1,4 +1,4 @@
-package Task_2.Task_1;
+package Task_2;
 
 // Calculator class that acts as a model in the MVC pattern
 public class calculator {
