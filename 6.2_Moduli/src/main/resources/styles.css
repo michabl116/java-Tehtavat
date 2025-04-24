@@ -1,0 +1,31 @@
+/* Taustan tyyli */
+.tausta {
+    -fx-background-color: #f5f5f5;
+}
+
+/* Napin tyyli */
+.nappi {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+}
+
+.nappi:hover {
+    -fx-background-color: #45a049;
+}
+
+/* Tekstikenttien tyyli */
+.text-field {
+    -fx-font-size: 14px;
+}
+
+/* Valintalistojen tyyli */
+.combo-box {
+    -fx-font-size: 14px;
+}
+
+/* Otsikon tyyli */
+.text {
+    -fx-fill: #333333;
+}
