@@ -9,6 +9,7 @@
         <module name="7.1_Moduli" />
         <module name="6.2_Moduli" />
         <module name="6.3_Moduli" />
+        <module name="6.4_Moduli" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
