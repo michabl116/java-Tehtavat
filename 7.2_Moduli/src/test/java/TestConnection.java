@@ -4,7 +4,7 @@ import java.sql.SQLException;
 
 public class TestConnection {
     public static void main(String[] args) {
-        try (Connection conn = datasource.DatabaseConnection.getConnection()) {
+        try (Connection conn = datasource.TietokantaYhteys.getYhteys()) {
             System.out.println("¡Conectado correctamente!");
         } catch (SQLException e) {
             System.err.println("Error al conectar: " + e.getMessage());

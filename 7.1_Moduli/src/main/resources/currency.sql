@@ -3,12 +3,12 @@ CREATE DATABASE currency_converter;
 USE currency_converter;
 CREATE TABLE currencies (
                             id INT AUTO_INCREMENT PRIMARY KEY,
-                            code CHAR(3) NOT NULL UNIQUE,
-                            `name` VARCHAR(50) NOT NULL,
-                            exchange_rate DECIMAL(15, 6) NOT NULL,
+                            koodi CHAR(3) NOT NULL UNIQUE,
+                            `nimi` VARCHAR(50) NOT NULL,
+                            peruskurssi DECIMAL(15, 6) NOT NULL,
                             last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
-INSERT INTO currencies (code, name, exchange_rate) VALUES
+INSERT INTO currencies (koodi, nimi, peruskurssi) VALUES
                                                        ('USD', 'US Dollar', 1.000000),
                                                        ('EUR', 'Euro', 0.930000),
                                                        ('GBP', 'British Pound', 0.790000),
