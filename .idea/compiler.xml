@@ -9,14 +9,14 @@
         <module name="7.1_Moduli" />
         <module name="6.2_Moduli" />
         <module name="6.3_Moduli" />
+        <module name="7.4_Moduli" />
         <module name="7.3_Moduli" />
-        <module name="4_Moduli" />
+        <module name="6.4_Moduli" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="5.2_Moduli" target="23" />
       <module name="6.1_Moduli" target="23" />
-      <module name="6.4_Moduli" target="23" />
     </bytecodeTargetLevel>
   </component>
 </project>
