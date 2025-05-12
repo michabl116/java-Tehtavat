@@ -1,0 +1,6 @@
+dao\ValuuttaDao.class
+view\Nakyma.class
+application\Sovellus.class
+model\Valuutta.class
+dao\MariaDbJpaConnection.class
+controller\Ohjain.class
