@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="7.1_Moduli" />
         <module name="6.2_Moduli" />
         <module name="6.3_Moduli" />
         <module name="7.4_Moduli" />
-        <module name="7.3_Moduli" />
         <module name="6.4_Moduli" />
+        <module name="7.1_Moduli" />
+        <module name="7.2_Moduli" />
+        <module name="7.3_Moduli" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
